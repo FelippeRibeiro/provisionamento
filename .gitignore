@@ -1,33 +1,39 @@
-# Dependencies
-node_modules
-.pnpm-debug.log*
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Next.js
-.next
-out
-dist
-build
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Environment
-.env
-.env.local
-.env.*.local
+# testing
+/coverage
 
-# IDE
-.vscode
-.idea
-*.swp
-*.swo
-*~
+# next.js
+/.next/
+/out/
 
-# OS
+# production
+/build
+
+# misc
 .DS_Store
-Thumbs.db
+*.pem
 
-# Prisma
-prisma/migrations
-
-# Logs
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# prisma
+/prisma/migrations
