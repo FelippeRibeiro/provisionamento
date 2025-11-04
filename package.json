@@ -1,0 +1,19 @@
+{
+  "name": "sales-provisioning-system",
+  "version": "1.0.0",
+  "description": "Sistema de Provisionamento de Vendas",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "db:push": "cd apps/api && pnpm prisma db push",
+    "db:generate": "cd apps/api && pnpm prisma generate",
+    "db:migrate": "cd apps/api && pnpm prisma migrate dev",
+    "db:seed": "cd apps/api && pnpm prisma db seed"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
